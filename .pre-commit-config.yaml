@@ -7,6 +7,7 @@ repos:
         language: system
         types: [ python ]
         files: ^(app/|tests/)
+        stages: [push]
         args: [
           '--experimental-string-processing',
           '--max-line-length=120',
@@ -18,6 +19,7 @@ repos:
         types: [ python ]
         include: ^(app/|tests/)
         exclude: '.*/migrations/.*'
+        stages: [push]
         args: [
           '--line-length=110',
           '--multi-line=3',
@@ -32,3 +34,4 @@ repos:
         language: system
         types: [ python ]
         files: ^(app/|tests/)
+        stages: [push]
