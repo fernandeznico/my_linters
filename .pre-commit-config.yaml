@@ -10,7 +10,7 @@ repos:
         stages: [push]
         args: [
           '--experimental-string-processing',
-          '--max-line-length=120',
+          '--line-length=120',
         ]
       - id: isort
         name: isort
