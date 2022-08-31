@@ -17,7 +17,7 @@ repos:
         entry: isort
         language: system
         types: [ python ]
-        include: ^(app/|tests/)
+        files: ^(app/|tests/)
         exclude: '.*/migrations/.*'
         stages: [push]
         args: [
