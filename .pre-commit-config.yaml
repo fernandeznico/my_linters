@@ -34,4 +34,5 @@ repos:
         language: system
         types: [ python ]
         files: ^(app/|tests/)
+        exclude: 'venv/*'
         stages: [push]
