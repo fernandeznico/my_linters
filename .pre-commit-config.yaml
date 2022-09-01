@@ -6,7 +6,7 @@ repos:
         entry: black
         language: system
         types: [ python ]
-        files: ^(app/|tests/)
+        files: '.+\.py'
         stages: [push]
         args: [
           '--experimental-string-processing',
@@ -17,7 +17,7 @@ repos:
         entry: isort
         language: system
         types: [ python ]
-        files: ^(app/|tests/)
+        files: '.+\.py'
         exclude: '.*/migrations/.*'
         stages: [push]
         args: [
@@ -33,6 +33,6 @@ repos:
         entry: pylama
         language: system
         types: [ python ]
-        files: ^(app/|tests/)
+        files: '.+\.py'
         exclude: 'venv/*'
         stages: [push]
